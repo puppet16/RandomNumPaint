@@ -3,4 +3,14 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+
+    <!-- 100% 黑色 -->
+    <color name="text_highlight">#FF000000</color>
+    <!-- 80% 黑色 -->
+    <color name="text_default">#CC000000</color>
+    <!-- 50% 黑色 -->
+    <color name="text_secondary">#80000000</color>
+    <!-- 30% 黑色 -->
+    <color name="text_hint">#4D000000</color>
+
 </resources>

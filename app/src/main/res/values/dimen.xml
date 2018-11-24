@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="text_default">15sp</dimen>
+    <dimen name="text_large">18sp</dimen>
+    <dimen name="edit_default">25sp</dimen>
+    <dimen name="button_default">20sp</dimen>
+</resources>
