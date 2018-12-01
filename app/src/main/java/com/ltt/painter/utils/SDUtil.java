@@ -104,11 +104,10 @@ public class SDUtil {
         try {
             out = new FileOutputStream(file);
 
-            if (bitmap.compress(Bitmap.CompressFormat.PNG, 90, out)) {
+            if (bitmap.compress(Bitmap.CompressFormat.JPEG, 90, out)) {
                 out.flush();
                 out.close();
             }
-
             return true;
 
         } catch (IOException e) {

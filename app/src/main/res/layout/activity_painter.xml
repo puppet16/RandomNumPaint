@@ -4,15 +4,77 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:paddingTop="30dp"
+    android:background="@color/background"
     tools:context="com.ltt.painter.MainActivity">
 
-    <TextView
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_content"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:textSize="@dimen/text_large"
+        android:textColor="@color/text_highlight"
         app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/tv_title"
         app:layout_constraintRight_toRightOf="parent"
+        tools:text="12" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:text="生成数字："
+        app:layout_constraintBaseline_toBaselineOf="@id/tv_content"
+        app:layout_constraintRight_toLeftOf="@id/tv_content"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/ll_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_content">
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_generate"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:text="生成"
+            android:textColor="@color/text_default"
+            android:textSize="@dimen/button_default" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_clear"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:text="清空"
+            android:textColor="@color/text_default"
+            android:textSize="@dimen/button_default" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_save"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:text="保存"
+            android:textColor="@color/text_default"
+            android:textSize="@dimen/button_default" />
+    </LinearLayout>
+
+    <com.jp.jcanvas.JCanvas
+        android:id="@+id/sp_painter"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ll_btn" />
 
 </android.support.constraint.ConstraintLayout>
