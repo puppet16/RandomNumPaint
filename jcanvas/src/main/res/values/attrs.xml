@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="JCanvas">
+        <attr name="j_minScale" format="float" />
+        <attr name="j_maxScale" format="float" />
+        <attr name="j_background" format="color|reference" />
+    </declare-styleable>
+    <attr name="JCanvasStyle" format="reference" />
+
+    <declare-styleable name="HueWheel">
+        <attr name="hw_wheelWidth" format="dimension" />
+        <attr name="hw_finderHeight" format="dimension" />
+        <attr name="hw_finderLedge" format="dimension" />
+        <attr name="hw_finderStroke" format="color|reference" />
+        <attr name="hw_finderStrokeWidth" format="dimension" />
+        <attr name="hw_finderCornerRadius" format="dimension" />
+        <attr name="hw_hue" format="float" />
+    </declare-styleable>
+    <attr name="HueWheelStyle" format="reference" />
+
+    <declare-styleable name="SaturationValuePanel">
+        <attr name="svp_pointerSize" format="dimension" />
+        <attr name="svp_pointerStroke" format="color|reference" />
+        <attr name="svp_pointerStrokeWidth" format="dimension" />
+        <attr name="svp_hue" format="float" />
+        <attr name="svp_saturation" format="float" />
+        <attr name="svp_value" format="float" />
+    </declare-styleable>
+    <attr name="SVPanelStyle" format="reference" />
+
+    <declare-styleable name="ColorSeekBar">
+        <attr name="csb_orientation" format="enum">
+            <enum name="horizontal" value="0" />
+            <enum name="vertical" value="1" />
+        </attr>
+        <attr name="csb_barSize" format="dimension" />
+        <attr name="csb_finderSize" format="dimension" />
+        <attr name="csb_finderStroke" format="color|reference" />
+        <attr name="csb_finderStrokeWidth" format="dimension" />
+        <attr name="csb_finderCornerRadius" format="dimension" />
+        <attr name="csb_colorStart" format="color" />
+        <attr name="csb_colorEnd" format="color" />
+    </declare-styleable>
+    <attr name="ColorSeekBarStyle" format="reference" />
+
+    <declare-styleable name="ColorPreview">
+        <attr name="cp_oldColor" format="color" />
+        <attr name="cp_newColor" format="color" />
+    </declare-styleable>
+    <attr name="ColorPreviewStyle" format="reference" />
+
+    <declare-styleable name="ColorInfo">
+        <attr name="ci_color" format="color" />
+    </declare-styleable>
+    <attr name="ColorInfoStyle" format="reference" />
+</resources>
